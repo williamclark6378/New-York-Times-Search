@@ -2,8 +2,7 @@ $(document).ready(function() {
 
 
     //set global variables
-    let searchTerms = 
-
+    let pubYear = '&pub_year=startYear-endYear'
 
 
 
@@ -21,10 +20,8 @@ $(document).ready(function() {
         event.preventDefault();
 
         //set var for api search
-        var queryURL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=NEKLRMc4YggFyq7Dq9JmmHAGoQX3VCBI`;
-        //set queryURL
-        //let queryURL =
-        let  
+        let searchTerms = 'elections'
+        let queryURL = `https://api.nytimes.com/svc/search/v2/articlesearch.jsonq?=${searchTerms}&api-key=NEKLRMc4YggFyq7Dq9JmmHAGoQX3VCBI${pubYear}`;
 
         $.ajax({
             url: queryURL,
