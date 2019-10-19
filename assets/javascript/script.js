@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
     //set global variables
-
+    let searchTerms = 
 
 
 
@@ -25,12 +25,12 @@ $(document).ready(function() {
         //let queryURL = 
 
         $.ajax({
-            url: queryULR,
+            url: queryURL,
             method: 'GET'
         }).then(function(response) {
             //set call back fucntion
 
-            
+
         })
 
     });
